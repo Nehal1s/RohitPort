@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css">
+    <title>Param</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+
+    <script src="https://kit.fontawesome.com/c3d540e188.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+
+        <ul class="nav-links">
+            <li><a href="#"><i class="fas fa-home"></i><p>Bashboard</p></a></li>
+            <li class="pain"><a onclick="Search()" href="#"><i class="fas fa-search"></i><p>Search</p></a>
+                <div class="searchBar">
+                    <input type="text" placeholder="Search Something!">
+                </div></li>
+            <li><a href="#"><i class="fas fa-users"></i><p>Community</p></a></li>
+            <li><a href="#"><i class="fas fa-question"></i><p>What</p></a></li>
+            <li><a href="#"><i class="fas fa-book"></i><p>My Reads</p></a></li>
+            <li><a href="#"><i class="fas fa-bug"></i><p>Reports</p></a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i><p>Log Out</p></a></li>
+            <div class="active"></div>
+
+        </ul>
+    </nav>
+    <!-- <div class="container">
+        <!-- <div class="spec"></div>
+        <div class="spec"></div>
+        <div class="spec"></div>
+        <div class="spec"></div>
+        <div class="spec"></div>
+        <div class="spec"></div>
+        <div class="spec"></div>
+        <div class="spec"></div>
+        <div class="spec"></div>
+        <div class="spec"></div>
+        <div class="spec"></div> -->
+    </div> -->
+    <footer>
+
+    </footer>
+</body>
+<script>
+    function Search(){
+            var dop = document.querySelector('.pain .searchBar');
+            dop.style.display = dop.style.display == "block" ? "none" : "block";
+            console.log(dop.style.display);
+    }
+</script>
+</html>
